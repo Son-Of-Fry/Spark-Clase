@@ -23,11 +23,11 @@ cd Spark-Clase
 	1.	Crea una cuenta en Kaggle si no tienes una.
 	2.	Ve a My Account y haz clic en Create New API Token.
 	3.	Descarga el archivo kaggle.json.
-	4.	Coloca kaggle.json en la ruta:
-
-.kaggle/kaggle.json
-
-(Si la carpeta .kaggle no existe, créala en la raíz del proyecto)
+	4.	Coloca kaggle.json en la ruta: 
+        
+        .kaggle/kaggle.json
+        
+        (Si la carpeta .kaggle no existe, créala en la raíz del proyecto)
 
 
 
