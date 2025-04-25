@@ -11,7 +11,7 @@ Este repositorio contiene un entorno reproducible basado en Docker para administ
 ### 1. **Clonar el repositorio**
 
 ```bash
-git clone https://github.com/tu_usuario/Spark-Clase.git
+git clone https://github.com/Son-Of-Fry/Spark-Clase.git
 cd Spark-Clase
 ```
 
