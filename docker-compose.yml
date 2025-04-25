@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  pyspark-kaggle:
+    image: python:3.11-slim
+    container_name: pyspark_kaggle
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "8891:8891"
+    environment:
+      - PYSPARK_PYTHON=python3
+    command: >
+      /bin/bash -c "
+        apt-get update &&
+        apt-get install -y git openjdk-17-jre-headless wget unzip &&
+        pip install --upgrade pip &&
+        if [ -f requirements.txt ] && [ -s requirements.txt ]; then
+          pip install -r requirements.txt || echo 'Some dependencies failed to install' >> errorsinstalls.txt;
+        else
+          echo 'requirements.txt is missing or empty!' > errorsinstalls.txt;
+        fi &&
+        pip install jupyterlab &&
+        jupyter-lab --ip=0.0.0.0 --port=8891 --no-browser --allow-root"

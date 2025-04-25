@@ -1,0 +1,10 @@
+pyspark
+kaggle
+jupyterlab
+pandas
+numpy
+notebook
+matplotlib
+seaborn
+findspark
+# Puedes añadir más según tus necesidades
