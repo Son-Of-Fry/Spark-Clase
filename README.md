@@ -25,7 +25,7 @@ cd Spark-Clase
 	3.	Descarga el archivo kaggle.json.
 	4.	Coloca kaggle.json en la ruta: 
         
-        .kaggle/kaggle.json
+            .kaggle/kaggle.json
         
         (Si la carpeta .kaggle no existe, créala en la raíz del proyecto)
 
@@ -40,8 +40,8 @@ Esto instalará todas las dependencias y levantará un entorno Jupyter Lab en el
 
 
 ### 4. **Conectarse al contenedor y trabajar el proyecto**
-	•	Abre http://localhost:8891 en tu navegador para usar Jupyter Lab dentro del contenedor.
-	•	O usa VS Code con la extensión “Remote - Containers” para abrir y editar los archivos dentro del contenedor.
+- Abre http://localhost:8891 en tu navegador para usar Jupyter Lab dentro del contenedor.
+- O usa VS Code con la extensión “Remote - Containers” para abrir y editar los archivos dentro del contenedor.
 
 
 
@@ -61,7 +61,7 @@ Esto descargará el dataset y lo dejará listo en data/raw/.
 
 Abre el notebook:
 
-notebooks/EDA.ipynb
+    notebooks/EDA.ipynb
 
 y ejecuta las celdas para analizar la estructura y estadísticas iniciales de los datos.
 
