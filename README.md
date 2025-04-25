@@ -18,7 +18,7 @@ cd Spark-Clase
 
 ---
 
-2. Configurar la API de Kaggle
+### 2. Configurar la API de Kaggle
 	1.	Crea una cuenta en Kaggle si no tienes una.
 	2.	Ve a My Account y haz clic en Create New API Token.
 	3.	Descarga el archivo kaggle.json.
@@ -30,7 +30,7 @@ cd Spark-Clase
 
 ---
 
-3. Levantar el contenedor Docker
+### 3. Levantar el contenedor Docker
 ```bash
 docker-compose up -d --build
 ```
@@ -38,13 +38,13 @@ Esto instalará todas las dependencias y levantará un entorno Jupyter Lab en el
 
 ---
 
-4. Conectarse al contenedor y trabajar el proyecto
+### 4. Conectarse al contenedor y trabajar el proyecto
 	•	Abre http://localhost:8891 en tu navegador para usar Jupyter Lab dentro del contenedor.
 	•	O usa VS Code con la extensión “Remote - Containers” para abrir y editar los archivos dentro del contenedor.
 
 ---
 
-5. Descargar el dataset de Kaggle
+### 5. Descargar el dataset de Kaggle
 
 Dentro del contenedor, ejecuta:
 
@@ -56,7 +56,7 @@ Esto descargará el dataset y lo dejará listo en data/raw/.
 
 ---
 
-6. Explorar los datos (EDA)
+### 6. Explorar los datos (EDA)
 
 Abre el notebook:
 
@@ -66,7 +66,7 @@ y ejecuta las celdas para analizar la estructura y estadísticas iniciales de lo
 
 ---
 
-📁 Estructura recomendada del proyecto
+## 📁 Estructura recomendada del proyecto
 ```
 Spark-Clase/
 │
@@ -88,7 +88,7 @@ Spark-Clase/
 
 ---
 
-📋 Notas y buenas prácticas
+## 📋 Notas y buenas prácticas
 	•	Los datos y archivos .kaggle/ están en .gitignore y no deben subirse al repositorio.
 	•	Modifica los paths en notebooks/scripts según la ubicación de los datos.
 	•	Si tienes problemas de RAM o espacio, descarga los archivos grandes de Kaggle uno por uno, no el ZIP completo.
