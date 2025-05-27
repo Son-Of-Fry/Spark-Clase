@@ -20,7 +20,7 @@ outputs/
 *.parquet
 
 # Credenciales Kaggle
-.kaggle/
+#.kaggle/
 
 # Logs y archivos temporales
 *.log
